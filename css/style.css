@@ -1,0 +1,278 @@
+/* xxxxxxxxxxxxxxx  Font for the theme xxxxxxxxxxxxxxxxx */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* ===========================  Common css ============================ */
+
+*{
+ margin :0;
+ padding :0;
+ box-sizing: border-box;
+ outline: 0;
+
+}
+
+ul,ol,li{
+   list-style: none;
+
+}
+a,span {
+   display: inline-block;
+   text-decoration: none;
+}
+img{
+   vertical-align: middle;
+
+}
+span,h1,h2,h3,h4,h5,h6,div,section,p,a,svg,button{
+   margin: 0;
+   padding: 0;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+body{
+   font-family: var(--theme--font--Poppins--);
+}
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+
+
+/* ===========================  Common css ============================ */
+
+/* xxxxxxxxxxxxx custom root files xxxxxxxxxxxxxx  */
+
+:root{
+
+   --prime--color--Blue--: #1C1E53 ;
+   --second--color--lBLue--: #F4F6FC ;
+   --3rd--color--ragular--Blue--:#2405F2 ;
+   --4th--color--llblue--: #FBFCFD ;
+   --btn--hover--color--: #FCD980 ;
+   --5th--color--bg--: #ffffff ;
+
+   --slider--color--: linear-gradient(to left top, rgb(28, 30, 83)  , rgba(28, 30, 83, 0.45))  ;
+   --boder--color--: rgba(255, 255, 255, 0.772);
+   
+   --theme--font--Poppins--: "Poppins", sans-serif;
+
+   --text--color--: #FFFFFF ;
+   --text--color--btn--: #BBBBCB ;
+   --text--color--tblack--: #282938 ;
+   --text--color--pg--: rgba(40, 41, 56, 0.616) ;
+   --text--color--litewhite--: #F4F6FC ;
+   --text--color--btn--black-- : #1B1C2B ;
+
+
+
+
+}
+
+
+
+
+/* xxxxxxxxxxxxx custom root files xxxxxxxxxxxxxx  */
+
+/* 00000000000000000000 cutstom Text modifacation 000000000000000000000 */
+
+.head-title-1{
+   
+   
+   font-size: 54px;
+   line-height: 74px;
+   font-weight:600 ;
+
+}
+.headline-pg{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px;
+   
+}
+
+.head-title-2{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+
+}
+
+.head-pg-2{
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+
+}
+.headline-cardbox1-title{
+   font-size: 32px;
+   font-weight: 500;
+   line-height: 48px;
+
+}
+.headline-cardbox1-pg{
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 28px;
+} 
+
+.headline-title-4{
+
+   font-size: 48px;
+   font-weight: 600;
+   line-height: 64px;
+
+}
+.headline-cardbox2-title{
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 36px;
+
+}
+
+.headline-cardbox1-pg{
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 28px;
+} 
+
+.review--text{
+   font-size: 32px;
+   font-weight: 500;
+   line-height: 48px;
+
+}
+
+.FAQ-text{
+   font-size: 38px ;
+   font-weight: 600;
+   line-height: 56px;
+}
+
+.faq-button-text{
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 32px;
+  
+}
+
+/* 00000000000000000000 cutstom Text modifacation end 000000000000000000000 */
+
+
+
+
+/* xxxxxxxxxxxxxxxxxx Button stock xxxxxxxxxxxxxxxxxxx */
+
+.custombtn{
+   padding: 16px 48px;
+   background-color: transparent;
+   border: none;
+   border: 2px solid rgba(244, 246, 252, 0.20);
+   border-radius: 41px;
+
+   color:var(--5th--color--bg--) ;
+   font-size: 16px;
+   font-weight: 500;
+
+
+
+}
+
+/* xxxxxxxxxxxxxxxxxx Button stock xxxxxxxxxxxxxxxxxxx */
+
+
+
+/* xxxxxxxxxxxxxxxxxx Nav Bar xxxxxxxxxxxxxxxxxxx */
+.customNav{
+   background-color: var(--prime--color--Blue--);
+   padding: 16px 0;
+
+}
+
+
+.customNavlistmod{
+   display: flex;
+   flex-direction: row;
+   column-gap: 15px;
+   margin-right: 95px;
+}
+
+.customNavitems{
+color: var(--text--color--btn--);
+font-size: 16px ;
+font-weight: 500;
+line-height: 32px;  
+padding: 0 !important;
+
+position: relative;
+
+}
+
+.customNavitems::after{
+   width: 0%;
+   height: 2px;
+   background-color: #FCD980;
+   left: 0;
+   bottom: 0;
+   position: absolute;
+   content:"" ;
+   transition: all linear 0.4s;
+
+}
+
+.customNavitems:hover{
+   color: var(--5th--color--bg--);
+}
+
+.customNavitems:hover::after{
+width: 100%;
+}
+
+/* xxxxxxxxxxxxxxxx custom button xxxxxxxxxxxxxxxxxx */
+
+.modifyBtnNav{
+   padding: 16px 48px;
+   background-color: transparent;
+   border: none;
+   border: 2px solid rgba(244, 246, 252, 0.20);
+   border-radius: 41px;
+
+   color:var(--5th--color--bg--) ;
+   font-size: 16px;
+   font-weight: 500;
+   position: relative;
+
+   z-index: 1;
+
+}
+.modifyBtnNav::after{
+   position: absolute;
+   content: "";
+   width: 0%;
+   height: 100%;
+   border-radius: 41px;
+   left: 0;
+   bottom: 0;
+   z-index: -1;
+   background-color: var(--btn--hover--color--);
+
+   transition: all linear 0.3s;
+
+}
+
+.modifyBtnNav:hover{
+   color: var(--prime--color--Blue--);
+}
+
+
+.modifyBtnNav:hover::after{
+   width: 100%;
+
+}
+
+/* xxxxxxxxxxxxxxxxxx Nav Bar xxxxxxxxxxxxxxxxxxx */
